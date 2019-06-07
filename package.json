@@ -1,0 +1,10 @@
+{
+  "name": "fashionista-knitting-co",
+  "version": "0.0.0",
+  "description": "Fashionista Knitting Co. Website",
+  "main": "index.js",
+  "repository": "https://github.com/hguiney/fashionista-knitting-co",
+  "author": "Hugh Guiney",
+  "license": "UNLICENSED",
+  "private": true
+}
