@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 { 
+  text-align: center;
+}
+
+.category-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-link {
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 .75rem .75rem;
+  width: 100%;
+  width: calc( 100% - 1.5rem );
+  height: 12rem;
+}
+
+@media only screen and (min-width: 12.5em) {
+  .category-link {
+    width: 50%;
+    width: calc( 50% - 1.5rem );
+  }
+
+  .category-link:nth-child( even ) {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 43.75em) {
+  .category-link {
+    width: 25%;
+    width: calc( 25% - 1.5rem );
+  }
+
+  .category-link:nth-child( even ) {
+    margin-left: unset;
+  }
+
+  .category-link:nth-child( odd ) {
+    margin-left: 0;
+  }
+}
+
+.category-link__heading {
+  margin: 0;
+}
